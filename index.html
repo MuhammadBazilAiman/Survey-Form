@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <title>Survey Form by Bazil</title>
+  </head>
+  <body>
+    <header class="header-box" action="/action_page.php">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <p style="font-size: xx-small;">*This is a replica of the freeCodeCamp Survey Form</p>
+
+    </header>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required />
+      <br />
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required />
+      <br />
+      <label id="number-label" for="number">Age (optional)</label>
+      <input id="number" type="number" placeholder="Age" min="1" max="100" />
+      <br />
+
+      <label for="role">Which option best describes your current role?</label>
+      <select name="role" id="dropdown">
+        <option value="" disabled selected>Select current role</option>
+        <option value="student">Student</option>
+        <option value="full-time-job">Full Time Job</option>
+        <option value="full-time-student">Full Time Student</option>
+        <option value="prefer-not-to-say">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+
+      <br />
+
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+
+      <div class="radio-box">
+        <input
+          id="definitely"
+          type="radio"
+          name="recommendation"
+          value="definitely"
+        />
+        <label for="definitely">Definitely</label>
+      </div>
+      <div class="radio-box">
+        <input id="maybe" type="radio" name="recommendation" value="maybe" />
+        <label for="definitely">Maybe</label>
+      </div>
+      <div class="radio-box">
+        <input
+          id="not-sure"
+          type="radio"
+          name="recommendation"
+          value="not-sure"
+        />
+        <label for="definitely">Not sure</label>
+      </div>
+      <br />
+
+      <label for="fav-feature"
+        >What is your favorite feature of freeCodeCamp?</label
+      >
+      <select name="fav-feature" id="dropdown">
+        <option value="" disabled selected>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="open-source">Open Source</option>
+      </select>
+      <br />
+
+      <p>What would you like to see improved? (Check all that apply)</p>
+
+      <div class="checkbox-box">
+        <input
+          type="checkbox"
+          id="front-end-projects"
+          name="front-end-projects"
+          value="front-end-projects"
+        />
+        <label for="front-end-projects">Front-end Projects</label>
+      </div>
+      <div class="checkbox-box">
+        <input
+          type="checkbox"
+          id="back-end-projects"
+          name="back-end-projects"
+          value="back-end-projects"
+        />
+        <label for="back-end-projects">Back-end Projects</label>
+      </div>
+      <div class="checkbox-box">
+        <input
+          type="checkbox"
+          id="data-visualization"
+          name="data-visualization"
+          value="data-visualization"
+        />
+        <label for="data-visualization">Data Visualization</label>
+      </div>
+      <div class="checkbox-box">
+        <input
+          type="checkbox"
+          id="challenges"
+          name="challenges"
+          value="challenges"
+        />
+        <label for="challenges">Challenges</label>
+      </div>
+      <div class="checkbox-box">
+        <input
+          type="checkbox"
+          id="open-source-community"
+          name="open-source-community"
+          value="open-source-community"
+        />
+        <label for="open-source-community">Open Source Community</label>
+      </div>
+      <div class="checkbox-box">
+        <input
+          type="checkbox"
+          id="gitter-help-rooms"
+          name="gitter-help-rooms"
+          value="gitter-help-rooms"
+        />
+        <label for="gitter-help-rooms">Gitter help rooms</label>
+      </div>
+      <div class="checkbox-box">
+        <input type="checkbox" id="videos" name="videos" value="videos" />
+        <label for="videos">Videos</label>
+      </div>
+      <div class="checkbox-box">
+        <input
+          type="checkbox"
+          id="city-meetups"
+          name="city-meetups"
+          value="city-meetups"
+        />
+        <label for="city-meetups">City Meetups</label>
+      </div>
+      <div class="checkbox-box">
+        <input type="checkbox" id="wiki" name="wiki" value="wiki" />
+        <label for="wiki">Wiki</label>
+      </div>
+      <div class="checkbox-box">
+        <input type="checkbox" id="forum" name="forum" value="forum" />
+        <label for="forum">Forum</label>
+      </div>
+      <div class="checkbox-box">
+        <input
+          type="checkbox"
+          id="additional-courses"
+          name="additional-courses"
+          value="additional-courses"
+        />
+        <label for="additional-courses">Additional Courses</label>
+      </div>
+      <br />
+      <p>Any comments or suggestions?</p>
+      <label for="comment"></label>
+      <textarea
+        name="comment"
+        id="comment"
+        cols="50"
+        rows="10"
+        placeholder="Enter your comment here..."
+      ></textarea>
+      <br />
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+    <footer>Made by Muhammad Bazil Aiman &#127801</footer>
+  </body>
+</html>
